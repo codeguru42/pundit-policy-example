@@ -1,5 +1,9 @@
 class ArticlesController < ApplicationController
-  def index
+  def current_user
 
+  end
+
+  def index
+    authorize Article
   end
 end
